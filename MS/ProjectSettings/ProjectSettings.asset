@@ -617,7 +617,7 @@ PlayerSettings:
   webGLWasmStreaming: 0
   scriptingDefineSymbols:
     7: Cube;Kanji
-    14: master
+    14: master;DOTNETWINRT_PRESENT
   platformArchitecture: {}
   scriptingBackend:
     Windows Store Apps: 2

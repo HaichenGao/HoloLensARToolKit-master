@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "tMR7vJ9BuGuae3UXFoP7KwWq+NxShBfCdfq+qfc32HPbZXBKlWQ+8K/n9cUTt9k7yQUoYf/5o9MiTmCo2+z07g==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\DELL\\Documents\\GitHub\\MaterialSwitch\\HoloLensARToolKit-master\\MS\\Assets\\HoloLensARToolKit.Dependencies.msb4u.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DELL\\.nuget\\packages\\newtonsoft.json\\11.0.1\\newtonsoft.json.11.0.1.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package MSBuildForUnity. No packages exist with this id in source(s): NuGet",
+      "libraryId": "MSBuildForUnity",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.6"
+      ]
+    }
+  ]
+}

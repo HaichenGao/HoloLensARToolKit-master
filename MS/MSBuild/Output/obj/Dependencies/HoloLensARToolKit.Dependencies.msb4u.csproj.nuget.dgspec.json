@@ -1,0 +1,84 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\DELL\\Documents\\GitHub\\MaterialSwitch\\HoloLensARToolKit-master\\MS\\Assets\\HoloLensARToolKit.Dependencies.msb4u.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\DELL\\Documents\\GitHub\\MaterialSwitch\\HoloLensARToolKit-master\\MS\\Assets\\HoloLensARToolKit.Dependencies.msb4u.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\DELL\\Documents\\GitHub\\MaterialSwitch\\HoloLensARToolKit-master\\MS\\Assets\\HoloLensARToolKit.Dependencies.msb4u.csproj",
+        "projectName": "HoloLensARToolKit.Dependencies.msb4u",
+        "projectPath": "C:\\Users\\DELL\\Documents\\GitHub\\MaterialSwitch\\HoloLensARToolKit-master\\MS\\Assets\\HoloLensARToolKit.Dependencies.msb4u.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DELL\\Documents\\GitHub\\MaterialSwitch\\HoloLensARToolKit-master\\MS\\MSBuild\\Output\\obj\\Dependencies\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DELL\\Documents\\GitHub\\MaterialSwitch\\HoloLensARToolKit-master\\MS\\Assets\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net46"
+        ],
+        "sources": {
+          "http://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "net46": {
+            "targetAlias": "net46",
+            "projectReferences": {
+              "C:\\Users\\DELL\\Documents\\GitHub\\MaterialSwitch\\HoloLensARToolKit-master\\MS\\Library\\PackageCache\\com.unity.collab-proxy@1.14.16\\CollabProxy.csproj": {
+                "projectPath": "C:\\Users\\DELL\\Documents\\GitHub\\MaterialSwitch\\HoloLensARToolKit-master\\MS\\Library\\PackageCache\\com.unity.collab-proxy@1.14.16\\CollabProxy.csproj",
+                "privateAssets": "analyzers"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net46": {
+          "targetAlias": "net46",
+          "dependencies": {
+            "MSBuildForUnity": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "Analyzers",
+              "target": "Package",
+              "version": "[0.9.2-*, 0.9.2]"
+            },
+            "Newtonsoft.Json": {
+              "suppressParent": "Analyzers",
+              "target": "Package",
+              "version": "[11.0.1, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\DELL\\Documents\\GitHub\\MaterialSwitch\\HoloLensARToolKit-master\\MS\\Library\\PackageCache\\com.unity.collab-proxy@1.14.16\\CollabProxy.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\DELL\\Documents\\GitHub\\MaterialSwitch\\HoloLensARToolKit-master\\MS\\Library\\PackageCache\\com.unity.collab-proxy@1.14.16\\CollabProxy.csproj",
+        "projectName": "CollabProxy",
+        "projectPath": "C:\\Users\\DELL\\Documents\\GitHub\\MaterialSwitch\\HoloLensARToolKit-master\\MS\\Library\\PackageCache\\com.unity.collab-proxy@1.14.16\\CollabProxy.csproj",
+        "frameworks": {
+          "net35": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net35": {}
+      }
+    }
+  }
+}
