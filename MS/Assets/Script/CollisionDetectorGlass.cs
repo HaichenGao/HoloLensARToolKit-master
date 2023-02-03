@@ -40,7 +40,7 @@ public class CollisionDetectorGlass : MonoBehaviour
         {
             //byte[] sendBytes = Encoding.ASCII.GetBytes(messagePython);
             //client.Send(sendBytes, sendBytes.Length);
-            serialController.SendSerialMessage("0");
+            serialController.SendSerialMessage("S");
             Debug.Log($"Glass trigger exited by: {other.gameObject.name} {Time.time}");
         }
     }
