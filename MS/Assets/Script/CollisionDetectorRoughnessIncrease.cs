@@ -5,7 +5,7 @@ using System.Net.Sockets;
 using System;
 using System.Text;
 
-public class CollisionDetectorGlass : MonoBehaviour
+public class CollisionDetectorRoughnessIncrease : MonoBehaviour
 {
     SerialController serialController;
     UdpClient client;
@@ -25,12 +25,11 @@ public class CollisionDetectorGlass : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Right IndexTip")
+        if(other.gameObject.name == "Right IndexTip")
         {
-            //byte[] sendBytes = Encoding.ASCII.GetBytes(messagePython);
-            //client.Send(sendBytes, sendBytes.Length);
-            serialController.SendSerialMessage(messageArduino);
-            Debug.Log($"Glass triggered by: {other.gameObject.name} {Time.time}");
+            byte[] sendBytes = Encoding.ASCII.GetBytes(messagePython);
+            client.Send(sendBytes, sendBytes.Length);
+            Debug.Log($"Rougher material triggered: {other.gameObject.name} {Time.time}");
         }
     }
 
@@ -38,10 +37,9 @@ public class CollisionDetectorGlass : MonoBehaviour
     {
         if (other.gameObject.name == "Right IndexTip")
         {
-            //byte[] sendBytes = Encoding.ASCII.GetBytes(messagePython);
-            //client.Send(sendBytes, sendBytes.Length);
-            serialController.SendSerialMessage("S");
-            Debug.Log($"Glass trigger exited by: {other.gameObject.name} {Time.time}");
+            byte[] sendBytes = Encoding.ASCII.GetBytes("0");
+            client.Send(sendBytes, sendBytes.Length);
+            Debug.Log($"Rougher material exited: {other.gameObject.name} {Time.time}");
         }
     }
 }

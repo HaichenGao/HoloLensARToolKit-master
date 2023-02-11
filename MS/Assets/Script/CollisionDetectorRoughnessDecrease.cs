@@ -5,7 +5,7 @@ using System.Net.Sockets;
 using System;
 using System.Text;
 
-public class CollisionDetectorWood : MonoBehaviour
+public class CollisionDetectorRoughnessDecrease : MonoBehaviour
 {
     SerialController serialController;
     UdpClient client;
@@ -25,11 +25,12 @@ public class CollisionDetectorWood : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.name == "Right IndexTip")
+        if (other.gameObject.name == "Right IndexTip")
         {
-            byte[] sendBytes = Encoding.ASCII.GetBytes(messagePython);
-            client.Send(sendBytes, sendBytes.Length);
-            Debug.Log($"Wood triggered by: {other.gameObject.name} {Time.time}");
+            //byte[] sendBytes = Encoding.ASCII.GetBytes(messagePython);
+            //client.Send(sendBytes, sendBytes.Length);
+            serialController.SendSerialMessage(messageArduino);
+            Debug.Log($"Smoother material triggered: {other.gameObject.name} {Time.time}");
         }
     }
 
@@ -37,9 +38,10 @@ public class CollisionDetectorWood : MonoBehaviour
     {
         if (other.gameObject.name == "Right IndexTip")
         {
-            byte[] sendBytes = Encoding.ASCII.GetBytes("0");
-            client.Send(sendBytes, sendBytes.Length);
-            Debug.Log($"Wood trigger exited by: {other.gameObject.name} {Time.time}");
+            //byte[] sendBytes = Encoding.ASCII.GetBytes(messagePython);
+            //client.Send(sendBytes, sendBytes.Length);
+            serialController.SendSerialMessage("S");
+            Debug.Log($"Smoother material exited: {other.gameObject.name} {Time.time}");
         }
     }
 }
